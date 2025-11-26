@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0.27) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(assets/white-mustang.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px; /* added */
+}
+
+/* NAVBAR */
+.navbar {
+  width: 90%;
+  height: 75px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon .logo {
+  color: rgb(255, 68, 0);
+  font-size: 35px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: orange;
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid orange;
+  border-right: none;
+  padding-left: 10px;
+  color: white;
+}
+
+.btn {
+  width: 90px;
+  height: 40px;
+  background: orange;
+  border: 2px solid orange;
+  color: white;
+  cursor: pointer;
+}
+
+/* HERO CONTENT */
+.content {
+  width: 55%;
+  margin-left: 80px;
+  margin-top: 60px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.par {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.cn {
+  width: 150px;
+  height: 45px;
+  background: orange;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cn a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cn:hover {
+  background: white;
+  color: orange;
+}
+
+
+/* LOGIN BOX FIXED POSITION */
+.form {
+  width: 300px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.78);
+  border-radius: 10px;
+  position: absolute;
+
+  /* 🎯 New corrected position */
+  right: 80px;
+  top: 190px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.form h2 {
+  background: white;
+  padding: 10px;
+  color: orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form input {
+  width: 100%;
+  height: 35px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid orange;
+  margin-top: 20px;
+  color: white;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.btnn {
+  width: 100%;
+  height: 40px;
+  background: orange;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.btnn:hover {
+  background: white;
+  color: orange;
+}
+
+.link, .liw {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link a {
+  color: orange;
+}
+
+.form-icons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-icons ion-icon {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.form-icons ion-icon:hover {
+  color: orange;
+}
